@@ -1,0 +1,77 @@
+.musicLibraryHome {
+  display: flex;
+  margin-top: 2.5vh;
+  flex-direction: column;
+  height: 100vh;
+  width: 20vw;
+  align-self: center;
+}
+
+.library-header {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 2.5vh;
+  margin-inline: 1vw;
+}
+
+.song-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  width: 100%;
+  margin-block: 0.5vh;
+  transition: background-color 0.3s ease;
+}
+
+.selected {
+  background-color: rgba(62, 91, 199, 0.2);
+}
+
+.song-item:hover {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  width: 100%;
+  background-color: rgba(62, 91, 199, 0.2);
+  margin-block: 0.5vh;
+}
+
+.song-cover {
+  width: 9vh;
+  height: 10vh;
+  flex: 1;
+  padding-block: 1vh;
+  padding-inline: 1vw;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.song-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+.song-artist {
+  font-size: 10px;
+  color: #888;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding-bottom: 10vh;
+}
+
+.song-details {
+  flex: 2;
+  height: 10vh;
+  width: 100%;
+  padding-block: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
